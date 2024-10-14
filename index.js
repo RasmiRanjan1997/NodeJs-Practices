@@ -55,11 +55,11 @@
 
 // CRUD With file system;
 
-const fs = require('fs');
-const path = require('path');
-const dirPath = path.join(__dirname, 'CRUD');
-const filePath = `${dirPath}/omm.txt`;
-fs.writeFileSync(filePath, "add the ele file  in CRUD folder");
+// const fs = require('fs');
+// const path = require('path');
+// const dirPath = path.join(__dirname, 'CRUD');
+// const filePath = `${dirPath}/omm.txt`;
+// fs.writeFileSync(filePath, "add the ele file  in CRUD folder");
 
 // read in side text in the file;
 
@@ -86,4 +86,48 @@ fs.writeFileSync(filePath, "add the ele file  in CRUD folder");
 
 // delete the file;
 
-fs.unlinkSync(`${dirPath}/apple.txt`)
+// fs.unlinkSync(`${dirPath}/apple.txt`)
+
+// Asynchronous basics;
+
+// console.log('first');
+// setTimeout(()=>{
+//     console.log('second');
+    
+// }, 2000);
+// console.log('Third');
+
+// draw-back of asynchronous operation'
+
+// let a = 10;
+// let b = 10;
+
+// Asynchronous data drawback;
+// setTimeout(() => {
+//     b=20
+// }, 3000);
+
+// console.log(a + b);
+
+// handle the aSynchronous Data using the promise;
+
+// let a = 10;
+// let b = 0;
+// let waitingData = new Promise((resolve, reject) =>{
+//     setTimeout(() => {
+//         resolve(90);
+//     }, 4000);
+// });
+
+// waitingData.then((res) =>{
+//     console.log(a + res);
+// })
+
+// How node js works; (Call Back, Node API, CallBack Queue, Example, IQ)
+
+
+const express = require('express');
+const app = express();
+
+
+
